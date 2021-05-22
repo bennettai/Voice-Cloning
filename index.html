@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Voice Cloning</h1>
+    <form>
+        <input type="textarea" placeholder="Enter text to speak">
+
+        <input type="file" id="upload" title="Upload File" />
+        
+        <button type="submit" id="submit">Clone Audio</button>
+    </form>
+
+    <script>
+        function uploadAudio(event) {
+            document.getElementById("upload").load();
+        }
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</body>
+</html>
